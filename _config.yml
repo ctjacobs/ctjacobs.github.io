@@ -4,8 +4,8 @@ title: Christian T. Jacobs
 email: c.jacobs10@imperial.ac.uk
 description: Personal website of Christian T. Jacobs.
 keywords: christian jacobs, computational science, computational fluid dynamics, multiphase flow, mesh adaptivity, adaptive unstructured mesh, volcanic ash, numerical modelling, numerical methods, fluidity, firedrake-fluids, imperial college london, research data management, pyrdm, amateur radio, ham radio, pyqso
-baseurl: "" # The subpath of your site, e.g. /blog/
-url: "http://christianjacobs.uk" # The base hostname & protocol for your site. Use "http://locahost:4000" for local builds.
+baseurl: "/" # The subpath of your site, e.g. /blog/
+url: "http://christianjacobs.uk" # The base hostname & protocol for your site. Use "http://localhost:4000" for local builds.
 
 twitter_username: ctjacobs_uk
 github_username:  ctjacobs
