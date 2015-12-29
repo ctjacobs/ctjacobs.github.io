@@ -1,14 +1,13 @@
 ---
 layout: default
-title: Research
 ---
-
+{{#markdown}}
 <article id="main">
 
    <header class="special container">
 	   <span class="icon fa-mobile"></span>
 	   <h2><strong>Research</strong></h2>
-	   <p>Research Data Management</p>
+	   <p><h3>Research Data Management</h3></p>
    </header>
 
    <!-- Overview -->
@@ -17,7 +16,7 @@ title: Research
       <!-- Content -->
       <div class="content">
       
-      <p>I am the lead developer of <a href="https://github.com/pyrdm/pyrdm">PyRDM</a> (<b>R</b>esearch <b>D</b>ata <b>M</b>anagement with <b>Py</b>thon), a Python-based library which facilitates the automated publication of scientific software and data in online repositories such as those provided by <a href="http://www.figshare.com">Figshare. The <a href="http://www.doi.org/">Digital Object Identifier (DOI) that is minted for each repository enables a more formal way of citing research software and data (compared to, say, citing a generic user manual with no information about the specific revision of the software used to produce a particular data set).</p>
+      <p>I am the lead developer of <a href="https://github.com/pyrdm/pyrdm">PyRDM</a> (<b>R</b>esearch <b>D</b>ata <b>M</b>anagement with <b>Py</b>thon), a Python-based library which facilitates the automated publication of scientific software and data in online repositories such as those provided by <a href="http://www.figshare.com">Figshare</a>. The <a href="http://www.doi.org/">Digital Object Identifier (DOI)</a> that is minted for each repository enables a more formal way of citing research software and data (compared to, say, citing a generic user manual with no information about the specific revision of the software used to produce a particular data set).</p>
 
       <p>An overview of the typical actions that PyRDM performs is shown below for the case of software.</p>
 
@@ -28,34 +27,24 @@ title: Research
       </center>
       </p>
 
-<br/>
+      <p><a href="http://git-scm.com">Git</a> is first interrogated to obtain the revision of the source code currently in use. PyRDM then searches Figshare via its API to see whether that same revision of the code has already been published. If it has, the DOI can be reused; otherwise, the code is uploaded to a new repository on Figshare. PyRDM tags the new repository with the revision identifier (in the form of a SHA-1 Git commit hash), and adds author information obtained from the software's AUTHORS file, if present.</p>
 
-[Git](http://git-scm.com) is first interrogated to obtain the revision of the source code currently in use. PyRDM then searches Figshare via its API to see whether that same revision of the code has already been published. If it has, the DOI can be reused; otherwise, the code is uploaded to a new repository on Figshare. PyRDM tags the new repository with the revision identifier (in the form of a SHA-1 Git commit hash), and adds author information obtained from the software's AUTHORS file, if present.
-
-A paper describing the PyRDM library has been published in the Journal of Open Research Software:
-
-C. T. Jacobs, A. Avdis, G. J. Gorman, M. D. Piggott (2014). *PyRDM: A Python-based library for automating the management and online publication of scientific software and data*. Journal of Open Research Software, 2(1):e28, DOI: [10.5334/jors.bj](http://dx.doi.org/10.5334/jors.bj)
-
-A paper describing the application of PyRDM to Geographical Information Systems was presented at the [5th International Workshop on Semantic Digital Archives](http://sda2015.dke-research.de/):
-
-C. T. Jacobs, A. Avdis, S. L. Mouradian, M. D. Piggott (2015). *Integrating Research Data Management into Geographical Information Systems*. In Proceedings of the 5th International Workshop on Semantic Digital Archives, held in Poznań, Poland on 18 September 2015. [Pre-print](http://arxiv.org/abs/1509.04729)
-
-
-      <p>As part of my research, I have developed incompressible and compressible multiphase flow models in <a href="http://www.fluidity-project.org/">Fluidity</a> --- a computational fluid dynamics package developed at Imperial College London. Fluidity features an adaptive unstructured mesh approach which provides finer resolution in areas significantly important to the dynamics being studied and coarser resolution in those areas that are not. As the flow progresses, the mesh is optimised to maintain numerical accuracy while minimising the number of superfluous nodes. Furthermore, Fluidity can run in parallel over thousands of computer processors using the Message Passing Interface (MPI), making the study of large-scale geophysical phenomena feasible in complex 3D domains.</p>
       
-      <p>
-      <center>
-         <img src="/images/salinity_2d_adaptive.jpg" alt="Simulation of silicon carbide particles settling in saline water using Fluidity. Images by Jacobs et al. (2013)."/>
-         <p>
-         <i>Simulation of silicon carbide particles settling in saline water using Fluidity.<br>
-         Left: particle volume fraction field, Right: adaptive unstructured mesh.<br>
-         Images by Jacobs et al. (2013).</i>
-         </p>
-      </center>
+      <p>A paper describing the PyRDM library has been published in the Journal of Open Research Software:
+      <ul class="default">
+         <li>C. T. Jacobs, A. Avdis, G. J. Gorman, M. D. Piggott (2014). <b>PyRDM: A Python-based library for automating the management and online publication of scientific software and data</b>. Journal of Open Research Software, 2(1):e28, DOI: <a href="http://dx.doi.org/10.5334/jors.bj">10.5334/jors.bj</a></li>
+      </ul>
       </p>
-
+      
+      <p>A paper describing the application of PyRDM to Geographical Information Systems was presented at the <a href="http://sda2015.dke-research.de/">5th International Workshop on Semantic Digital Archives</a>:
+      <ul class="default">
+         <li>C. T. Jacobs, A. Avdis, S. L. Mouradian, M. D. Piggott (2015). <b>Integrating Research Data Management into Geographical Information Systems</b>. In Proceedings of the 5th International Workshop on Semantic Digital Archives, held in Poznań, Poland on 18 September 2015. <a href="http://arxiv.org/abs/1509.04729">Pre-print</a></li>
+      </ul>
+      </p>
+      
       </div>
    </section>
   
 
 </article>
+{{/markdown}}
