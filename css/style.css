@@ -275,6 +275,18 @@
 				width: 100%;
 			}
 
+		.image.christianjacobs {
+		   background: url("images/christianjacobs.png");
+			display: inline;
+			margin: 0 0 2em 0;
+		}
+
+			.image.christianjacobs img {
+			   background: url("images/christianjacobs.png");
+				display: inline;
+				width: 5%;
+			}
+			
 /* Icon */
 
 	.icon {
@@ -322,15 +334,6 @@
 					background: #7fb7d2;
 				}
 
-			.icon.circle.fa-facebook {
-				background: #7490c3;
-				color: white;
-			}
-
-				.icon.circle.fa-facebook:hover {
-					background: #829bc9;
-				}
-
 			.icon.circle.fa-google-plus {
 				background: #db6b67;
 				color: white;
@@ -349,15 +352,24 @@
 					background: #e1b89b;
 				}
 
-			.icon.circle.fa-dribbble {
-				background: #da83ae;
+			.icon.circle.fa-youtube {
+				background: #ff4d4d;
 				color: white;
 			}
 
-				.icon.circle.fa-dribbble:hover {
-					background: #df93b8;
+				.icon.circle.fa-youtube:hover {
+					background: #ff6666;
 				}
 
+			.icon.circle.fa-inbox {
+				background: #6666ff;
+				color: white;
+			}
+
+				.icon.circle.fa-inbox:hover {
+					background: #8080ff;
+				}
+				
 		.icon.featured {
 			cursor: default;
 			display: block;
