@@ -281,18 +281,6 @@
 				display: block;
 				width: 100%;
 			}
-
-		.image.christianjacobs {
-		   background: url("images/christianjacobs.png");
-			display: inline;
-			margin: 0 0 2em 0;
-		}
-
-			.image.christianjacobs img {
-			   background: url("images/christianjacobs.png");
-				display: inline;
-				width: 5%;
-			}
 			
 /* Icon */
 
