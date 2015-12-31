@@ -24,7 +24,9 @@ keywords: research data management, pyrdm, reproducibility, recomputability, ope
 
       <p>
       <center>
-      <img src="/images/pyrdm_software.png" alt="Typical actions performed by PyRDM when publishing software source code with Figshare. Image by Christian Jacobs, first presented at the 10th International Digital Curation Conference."/>
+      <div class="image fit">
+         <img style="max-width:400px;" src="/images/pyrdm_software.png" alt="Typical actions performed by PyRDM when publishing software source code with Figshare. Image by Christian Jacobs, first presented at the 10th International Digital Curation Conference."/>
+      </div>
       <p><i>Typical actions performed by PyRDM when publishing software source code with Figshare.<br>
       Image by Christian Jacobs, first presented at the <a href="http://www.dcc.ac.uk/events/idcc15">10th International Digital Curation Conference</a>.<br>
       The conference poster is available on <a href="http://dx.doi.org/10.6084/m9.figshare.1318710">Figshare</a>.</i></p>
@@ -33,7 +35,6 @@ keywords: research data management, pyrdm, reproducibility, recomputability, ope
 
       <p><a href="http://git-scm.com">Git</a> is first interrogated to obtain the revision of the source code currently in use. PyRDM then searches Figshare via its API to see whether that same revision of the code has already been published. If it has, the DOI can be reused; otherwise, the code is uploaded to a new repository on Figshare. PyRDM tags the new repository with the revision identifier (in the form of a SHA-1 Git commit hash), and adds author information obtained from the software's AUTHORS file, if present.</p>
 
-      
       <p>A paper describing the PyRDM library has been published in the Journal of Open Research Software:
       <ul class="default">
          <li>C. T. Jacobs, A. Avdis, G. J. Gorman, M. D. Piggott (2014). <b>PyRDM: A Python-based library for automating the management and online publication of scientific software and data</b>. Journal of Open Research Software, 2(1):e28, DOI: <a href="http://dx.doi.org/10.5334/jors.bj">10.5334/jors.bj</a></li>
