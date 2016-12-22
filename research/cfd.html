@@ -12,7 +12,7 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
 	   <p><h3>Computational Fluid Dynamics</h3></p>
    </header>
 
-   <!-- Overview -->
+   <!-- Multiphase flow -->
    <section class="wrapper style1 container">
    
       <!-- Content -->
@@ -34,7 +34,7 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
       </center>
       </p>
       
-      <p>Some (mostly multiphase) applications of Fluidity are described below. Further information can be found in my PhD thesis:<br>
+      <p>Some multiphase applications of Fluidity are described in the following subsections. Further information can be found in my PhD thesis:<br>
       <ul class="default">
          <li>C. T. Jacobs (2013). <b>Modelling of multiphase flows on adaptive unstructured meshes with applications to the dynamics of volcanic ash plumes</b>. <i>PhD Thesis, Imperial College London</i>. Handle: <a href="http://hdl.handle.net/10044/1/12785">10044/1/12785</a>.</li>
       </ul>
@@ -42,8 +42,7 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
       
       </div>
    </section>
-
-
+   
    <!-- Volcanic ash settling in water -->
    <section class="wrapper style1 container">
    
@@ -55,7 +54,7 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
 
       <p>Significant proportions of ash generated from explosive volcanic eruptions are found far and wide along the seabed in the form of ash layers. The study of ash particle dynamics in water is needed to better interpret these layers, which are important to geoscientists since they hold valuable information about the duration and frequency of volcanism. Early work (e.g. <a href="http://dx.doi.org/10.1016/0011-7471(65)90006-9">Fisher (1965)</a>) assumed that ash particles settled individually at a velocity given by Stokes' law, and that layers are not significantly modified after formation. However, laboratory experiments and analysis of marine sediment cores have demonstrated the potential role of vertical density currents in transporting particles rapidly and collectively to the seabed, contradicting the assumption of individual particle settling.</p>
 
-      <p>Fluidity was used to simulate a laboratory experiment of tephra (fine volcanic ash particles) settling through a tank of water, performed by <a href="http://dx.doi.org/10.1130/0091-7613(1997)​025<0839:IOCSOT>​2.3.CO;2">Carey (1997)</a>. The numerical results are shown in the video below.</p>
+      <p>Fluidity was used to simulate a laboratory experiment of tephra (fine volcanic ash particles) settling through a tank of water, performed by <a href="http://dx.doi.org/10.1130/0091-7613(1997)​025<0839:IOCSOT>​2.3.CO;2">Carey (1997)</a>. The numerical results are shown in the video below, with the particle volume fraction field shown on the left and the adaptive unstructured mesh on the right.</p>
       
       <p>
       <center>
@@ -84,7 +83,6 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
 
       </div>
    </section>
-   
    
    <!-- Explosive volcanic eruptions -->
    <section class="wrapper style1 container">
@@ -117,4 +115,34 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
       </div>
    </section>
 
+
+   <!-- Code generation -->
+   <section class="wrapper style1 container">
+   
+      <!-- Content -->
+      <div class="content">
+      <header>
+         <h2>Code generation</h2>
+      </header>
+      <p>The images below show the particle volume fraction field at t = 10, 30 and 70 seconds (left to right) from a two-dimensional compressible multiphase flow simulation of an explosive volcanic eruption. Hot gas and ash particles are ejected into the atmosphere at 80 m/s. The results show the formation of an overhanging vortex as the plume ascends, followed by the collapse of the ash column which forms a thick pyroclastic density current. A convective region is also present above the ash fountain which continues to rise as a result of buoyancy effects. Once again, the simulation was performed using Fluidity. A fixed structured mesh, with a characteristic element length of 12.5 m, was used to discretise the 7 km by 7 km domain.</p>
+
+      <p>
+      <center>
+      <div class="image fit">
+         <img style="max-width:650px;" src="/images/eruption_vfrac.png" alt="Simulation of an explosive volcanic eruption using Fluidity. Images by Christian Jacobs."/>
+      </div>
+      <p><i>Simulation of an explosive volcanic eruption using Fluidity.<br>
+      Left-to-right: particle volume fraction field at t = 10, 30 and 70 s.<br>
+      Images by Christian Jacobs.</i></p>
+      </center>
+      </p>
+      
+      <p>Further details can be found in the following conference paper:
+      <ul class="default">
+         <li>C. T. Jacobs, G. S. Collins, M. D. Piggott, S. C. Kramer (2014). <b>Multiphase flow modelling of explosive volcanic eruptions using an adaptive unstructured mesh-based approach</b>. In <i>Proceedings of the jointly organized 11th World Congress on Computational Mechanics (WCCM XI), 5th European Congress on Computational Mechanics (ECCM V), and 6th European Congress on Computational Fluid Dynamics (ECFD VI), Barcelona, 20-25 July 2014</i>. Pages 7406-7417. Handle: <a href="http://hdl.handle.net/10044/1/21241">10044/1/21241</a>. Links: <a href="http://www.wccm-eccm-ecfd2014.org/admin/files/filePaper/p313.pdf">Paper</a>, <a href="http://www.wccm-eccm-ecfd2014.org/ebook.zip">Full proceedings</a></li>
+      </ul>
+      </p>
+      
+      </div>
+   </section>
 </article>
