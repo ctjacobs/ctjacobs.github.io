@@ -17,6 +17,9 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
    
       <!-- Content -->
       <div class="content">
+      <header>
+         <h2>Multiphase flow</h2>
+      </header>
       <p>As part of my research undertaken at Imperial College London, I have developed incompressible and compressible multiphase flow models in <a href="http://www.fluidity-project.org/">Fluidity</a> --- a computational fluid dynamics package developed at Imperial College London. Fluidity features an adaptive unstructured mesh approach which provides finer resolution in areas significantly important to the dynamics being studied and coarser resolution in those areas that are not. As the flow progresses, the mesh is optimised to maintain numerical accuracy while minimising the number of superfluous nodes. Furthermore, Fluidity can run in parallel over thousands of computer processors using the Message Passing Interface (MPI), making the study of large-scale geophysical phenomena feasible in complex 3D domains.</p>
       
       <p>
@@ -47,7 +50,7 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
       <!-- Content -->
       <div class="content">
       <header>
-         <h2>Volcanic ash settling in water</h2>
+         <h3>Volcanic ash settling in water</h3>
       </header>
 
       <p>Significant proportions of ash generated from explosive volcanic eruptions are found far and wide along the seabed in the form of ash layers. The study of ash particle dynamics in water is needed to better interpret these layers, which are important to geoscientists since they hold valuable information about the duration and frequency of volcanism. Early work (e.g. <a href="http://dx.doi.org/10.1016/0011-7471(65)90006-9">Fisher (1965)</a>) assumed that ash particles settled individually at a velocity given by Stokes' law, and that layers are not significantly modified after formation. However, laboratory experiments and analysis of marine sediment cores have demonstrated the potential role of vertical density currents in transporting particles rapidly and collectively to the seabed, contradicting the assumption of individual particle settling.</p>
@@ -89,7 +92,7 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
       <!-- Content -->
       <div class="content">
       <header>
-         <h2>Explosive volcanic eruptions</h2>
+         <h3>Explosive volcanic eruptions</h3>
       </header>
 
       <p>The images below show the particle volume fraction field at t = 10, 30 and 70 seconds (left to right) from a two-dimensional compressible multiphase flow simulation of an explosive volcanic eruption. Hot gas and ash particles are ejected into the atmosphere at 80 m/s. The results show the formation of an overhanging vortex as the plume ascends, followed by the collapse of the ash column which forms a thick pyroclastic density current. A convective region is also present above the ash fountain which continues to rise as a result of buoyancy effects. Once again, the simulation was performed using Fluidity. A fixed structured mesh, with a characteristic element length of 12.5 m, was used to discretise the 7 km by 7 km domain.</p>
