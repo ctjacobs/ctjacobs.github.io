@@ -126,18 +126,14 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
       </header>
       <p>Traditional numerical model development involves the production of hand-written computer code to implement the underlying discretisation and solution algorithms. As high-performance computing hardware continues to evolve, the task of maintaining codes such as these becomes harder than ever, often involving re-writes in order to support the new hardware and run simulations on it as efficiently as possible. This puts a huge burden on the numerical modeller to not only be an expert in their domain of study but also in numerical methods and parallel computing. My most recent research has focussed on the use of code generation techniques, whereby the numerical model's underlying code is produced automatically from a high-level problem specification. This code can then in turn be targetted towards a range of different hardware architectures such as multi-core CPUs, GPUs and Intel Xeon Phi coprocessors. The layers of abstraction that are introduced means that the model equations and the discretisation procedures need only be written once at the high-level.</p>
 
-      <p>I have led the development of the <a href="https://github.com/firedrakeproject/firedrake-fluids">Firedrake-Fluids</a> project which uses <a href="http://www.firedrakeproject.org/">Firedrake</a> to automatically discretise and solve the shallow water equations with the finite element method. More recently, I have played a key role in the development of <a href="https://opensbli.github.io/">OpenSBLI</a> --- a framework for the derivation of finite difference-based models, which also uses source-to-source translation to target the code towards different hardware backends with the help of the <a href="http://www.oerc.ox.ac.uk/projects/ops">OPS</a> library.</p>
+      <p>I have led the development of the <a href="https://github.com/firedrakeproject/firedrake-fluids">Firedrake-Fluids</a> project which uses <a href="http://www.firedrakeproject.org/">Firedrake</a> to automatically discretise and solve the shallow water equations with the finite element method. More recently, I have played a key role in the development of <a href="https://opensbli.github.io/">OpenSBLI</a> --- a framework for the derivation of finite difference-based models, which uses source-to-source translation to target the generated code towards different hardware backends with the help of the <a href="http://www.oerc.ox.ac.uk/projects/ops">OPS</a> library.</p>
 
       <p>
       <center>
       <div class="image fit">
          <img style="max-width:400px;" src="/images/taylor_green_vortex.png" alt="Simulation of the Taylor-Green vortex problem, performed using OpenSBLI."/>
       </div>
-      <p><i>Simulation of the Taylor-Green vortex problem, performed using OpenSBLI on an NVIDIA Tesla
-K40c Graphics Processing Unit.<br>
-      Isosurfaces of the z-component of vorticity are shown.<br>
-      Approximately 1,500 lines of C code (which solve the compressible Navier-Stokes equations using a fourth-order finite difference scheme) were generated from a high-level problem description comprising approximately 100 lines of Python code.<br>
-      Images by Jacobs <i>et al.</i> (2017).</i></p>
+      <p><i>Simulation of the Taylor-Green vortex problem demonstrating vortex stretching and transition to turbulence, performed using OpenSBLI on an NVIDIA Tesla K40 Graphics Processing Unit. Isosurfaces of the z-component of vorticity are shown. Approximately 1,500 lines of C code (which solve the compressible Navier-Stokes equations using a fourth-order finite difference scheme) were generated from a high-level problem description comprising approximately 100 lines of Python code. Images by Jacobs <i>et al.</i> (2017).</i></p>
       </center>
       </p>
       
