@@ -364,7 +364,16 @@
 				.icon.circle.fa-envelope:hover {
 					background: #8080ff;
 				}
-				
+
+			.icon.circle.fa-linkedin {
+				background: #00cc66;
+				color: white;
+			}
+
+				.icon.circle.fa-linkedin:hover {
+					background: #00e673;
+				}
+
 		.icon.featured {
 			cursor: default;
 			display: block;
