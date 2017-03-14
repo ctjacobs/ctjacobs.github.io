@@ -365,12 +365,12 @@
 					background: #8080ff;
 				}
 
-			.icon.circle.fa-linkedin {
+			.icon.circle.fa-linkedin-square {
 				background: #00cc66;
 				color: white;
 			}
 
-				.icon.circle.fa-linkedin:hover {
+				.icon.circle.fa-linkedin-square:hover {
 					background: #00e673;
 				}
 
