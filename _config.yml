@@ -10,6 +10,7 @@ url: "http://christianjacobs.uk" # The base hostname & protocol for your site. U
 twitter_username: ctjacobs_uk
 github_username:  ctjacobs
 youtube_channel_id: UCY5JHxJnQFkUNdwfvCuBlzw
+linkedin_id: christian-jacobs-9864b613b
 
 # Build settings
 markdown: kramdown
