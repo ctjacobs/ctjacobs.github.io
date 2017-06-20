@@ -1,0 +1,49 @@
+---
+layout: default
+title: Computational Fluid Dynamics - Research
+keywords: computational science, computational fluid dynamics, numerical modelling, numerical methods, simulation, code generation, CPU, GPU, firedrake-fluids, opensbli
+---
+
+<article id="main">
+
+   <header class="special container">
+	   <span class="icon fa-cogs"></span>
+	   <h2><strong>Research</strong></h2>
+	   <p><h3>Computational Fluid Dynamics</h3></p>
+   </header>
+
+   <!-- Code Generation -->
+   <section class="wrapper style1 container">
+   
+      <!-- Content -->
+      <div class="content">
+      <header>
+         <h2>Code Generation</h2>
+      </header>
+      <p>Traditional numerical model development involves the production of hand-written computer code to implement the underlying discretisation and solution algorithms. As high-performance computing hardware continues to evolve, the task of maintaining codes such as these becomes harder than ever, often involving re-writes in order to support the new hardware and run simulations on it as efficiently as possible. This puts a huge burden on the numerical modeller to not only be an expert in their field of study but also in numerical methods and parallel computing.</p>
+      
+      <p>A significant part of my research has focussed on the use of code generation techniques, whereby the numerical model's underlying code is produced automatically from a high-level problem specification. This code can then in turn be targetted towards a range of different hardware architectures such as multi-core CPUs, GPUs and Intel Xeon Phi processors. The layers of abstraction that are introduced means that the model equations and the discretisation procedures need only be written once at the high-level.</p>
+
+      <p>With funding from the <a href="http://www.archer.ac.uk/">UK National Supercomputing Service (ARCHER)</a>, I led the development of the <a href="https://github.com/firedrakeproject/firedrake-fluids">Firedrake-Fluids</a> project which uses <a href="http://www.firedrakeproject.org/">Firedrake</a> to automatically discretise and solve the shallow water equations with the finite element method. More recently, as part of the European Commission-funded <a href="http://exaflow-project.eu/">ExaFLOW project</a>, I have played a key role in the development of <a href="https://opensbli.github.io/">OpenSBLI</a> &mdash; a framework for the derivation of finite difference-based models, which uses source-to-source translation to target the generated code towards different hardware backends with the help of the <a href="http://www.oerc.ox.ac.uk/projects/ops">OPS</a> library.</p>
+
+      <p>
+      <center>
+      <div class="image fit">
+         <img style="max-width:400px;" src="/images/taylor-green-vortex.png" alt="Simulation of the Taylor-Green vortex problem, performed using OpenSBLI."/>
+      </div>
+      <p><i>Simulation of the Taylor-Green vortex problem demonstrating vortex stretching and transition to turbulence, performed using OpenSBLI on an NVIDIA Tesla K40 Graphics Processing Unit. Isosurfaces of the z-component of vorticity are shown. Approximately 1,500 lines of C code (which solve the compressible Navier-Stokes equations using a fourth-order finite difference scheme) were generated from a high-level problem description comprising approximately 100 lines of Python code. Images by Jacobs <i>et al.</i> (2017).</i></p>
+      </center>
+      </p>
+      
+      <p>Further details can be found in the following papers:
+      <ul class="default">
+         <li>C. T. Jacobs, M. D. Piggott (2015). <b>Firedrake-Fluids v0.1: numerical modelling of shallow water flows using an automated solution framework</b>. <i>Geoscientific Model Development</i>, 8(3):533-547, DOI: <a href="http://dx.doi.org/10.5194/gmd-8-533-2015">10.5194/gmd-8-533-2015</a>.</li><br>
+         <li>C. T. Jacobs, M. D. Piggott, S. C. Kramer, S. W. Funke (2016). <b>On the validity of tidal turbine array configurations obtained from steady-state adjoint optimisation</b>. In <i>Proceedings of the VII European Congress on Computational Methods in Applied Sciences and Engineering, held in Crete, Greece on 5-10 June 2016</i>, volume 4, pages 8247-8261. <a href="https://arxiv.org/abs/1601.08091">Pre-print</a>.</li><br>
+         <li>C. T. Jacobs, S. P. Jammy, N. D. Sandham (2017). <b>OpenSBLI: A framework for the automated derivation and parallel execution of finite difference solvers on a range of computer architectures</b>. <i>Journal of Computational Science</i>, 18:12-23, DOI: <a href="http://dx.doi.org/10.1016/j.jocs.2016.11.001">10.1016/j.jocs.2016.11.001</a>.</li><br>
+         <li>S. P. Jammy, C. T. Jacobs, N. D. Sandham (In Press). <b>Performance evaluation of explicit finite difference algorithms with varying amounts of computational and memory intensity</b>. <i>Journal of Computational Science</i>, DOI: <a href="http://dx.doi.org/10.1016/j.jocs.2016.10.015">10.1016/j.jocs.2016.10.015</a>.</li>
+      </ul>
+      </p>
+      
+      </div>
+   </section>
+</article>

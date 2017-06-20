@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Computational Fluid Dynamics - Research
-keywords: computational science, computational fluid dynamics, multiphase flow, mesh adaptivity, adaptive unstructured mesh, volcanic ash, numerical modelling, numerical methods, fluidity, firedrake-fluids, opensbli
+keywords: computational science, computational fluid dynamics, multiphase flow, mesh adaptivity, adaptive unstructured mesh, volcanic ash, numerical modelling, numerical methods, simulation, fluidity
 ---
 
 <article id="main">
@@ -12,15 +12,15 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
 	   <p><h3>Computational Fluid Dynamics</h3></p>
    </header>
 
-   <!-- Multiphase flow -->
+   <!-- Multiphase Flow -->
    <section class="wrapper style1 container">
    
       <!-- Content -->
       <div class="content">
       <header>
-         <h2>Multiphase flow</h2>
+         <h2>Multiphase Flow</h2>
       </header>
-      <p>As part of my research undertaken at <a href="http://www.imperial.ac.uk/">Imperial College London</a>, I have developed incompressible and compressible multiphase flow models in <a href="http://www.fluidity-project.org/">Fluidity</a> --- an open-source computational fluid dynamics package. Fluidity features an adaptive unstructured mesh approach which provides finer resolution in areas significantly important to the dynamics being studied and coarser resolution in those areas that are not. As the flow progresses, the mesh is optimised to maintain numerical accuracy while minimising the number of superfluous nodes. Furthermore, Fluidity can run in parallel over thousands of computer processors using the Message Passing Interface (MPI), making the study of large-scale geophysical phenomena feasible in complex 3D domains.</p>
+      <p>As part of my research undertaken at <a href="http://www.imperial.ac.uk/">Imperial College London</a>, I have developed incompressible and compressible multiphase flow models in <a href="http://www.fluidity-project.org/">Fluidity</a> &mdash; an open-source computational fluid dynamics package. Fluidity features an adaptive unstructured mesh approach which provides finer resolution in areas significantly important to the dynamics being studied and coarser resolution in those areas that are not. As the flow progresses, the mesh is optimised to maintain numerical accuracy while minimising the number of superfluous nodes. Furthermore, Fluidity can run in parallel over thousands of computer processors using the Message Passing Interface (MPI), making the study of large-scale geophysical phenomena feasible in complex 3D domains.</p>
       
       <p>
       <center>
@@ -28,8 +28,7 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
             <img style="max-width:600px;" src="/images/ash-settling-3d.jpg" alt="A three-dimensional multiphase flow simulation of volcanic ash settling in a water column. The simulation was performed using Fluidity."/>
          </div>
          <p>
-         <i>Visualisation of the particle volume fraction field, from a three-dimensional multiphase flow simulation of volcanic ash settling in a water column.<br>
-         The simulation was performed using Fluidity.</i>
+         <i>Visualisation of the particle volume fraction field, from a three-dimensional multiphase flow simulation of volcanic ash settling in a water column. The simulation was performed using Fluidity.</i>
          </p>
       </center>
       </p>
@@ -98,7 +97,7 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
       <p>
       <center>
       <div class="image fit">
-         <img style="max-width:650px;" src="/images/eruption_vfrac.png" alt="Simulation of an explosive volcanic eruption using Fluidity. Images by Christian Jacobs."/>
+         <img style="max-width:650px;" src="/images/eruption-vfrac.png" alt="Simulation of an explosive volcanic eruption using Fluidity. Images by Christian Jacobs."/>
       </div>
       <p><i>Simulation of an explosive volcanic eruption using Fluidity.<br>
       Left-to-right: particle volume fraction field at t = 10, 30 and 70 s.<br>
@@ -109,40 +108,6 @@ keywords: computational science, computational fluid dynamics, multiphase flow, 
       <p>The results of some simulations of explosive volcanic eruptions performed with adaptive unstructured meshes have been presented in the following conference paper:
       <ul class="default">
          <li>C. T. Jacobs, G. S. Collins, M. D. Piggott, S. C. Kramer (2014). <b>Multiphase flow modelling of explosive volcanic eruptions using an adaptive unstructured mesh-based approach</b>. In <i>Proceedings of the jointly organized 11th World Congress on Computational Mechanics (WCCM XI), 5th European Congress on Computational Mechanics (ECCM V), and 6th European Congress on Computational Fluid Dynamics (ECFD VI), held in Barcelona, Spain on 20-25 July 2014</i>. Pages 7406-7417. Handle: <a href="http://hdl.handle.net/10044/1/21241">10044/1/21241</a>. Links: <a href="http://www.wccm-eccm-ecfd2014.org/admin/files/filePaper/p313.pdf">Paper</a>, <a href="http://www.wccm-eccm-ecfd2014.org/ebook.zip">Full proceedings</a></li>
-      </ul>
-      </p>
-      
-      </div>
-   </section>
-
-
-   <!-- Code generation -->
-   <section class="wrapper style1 container">
-   
-      <!-- Content -->
-      <div class="content">
-      <header>
-         <h2>Code generation</h2>
-      </header>
-      <p>Traditional numerical model development involves the production of hand-written computer code to implement the underlying discretisation and solution algorithms. As high-performance computing hardware continues to evolve, the task of maintaining codes such as these becomes harder than ever, often involving re-writes in order to support the new hardware and run simulations on it as efficiently as possible. This puts a huge burden on the numerical modeller to not only be an expert in their domain of study but also in numerical methods and parallel computing. My most recent research has focussed on the use of code generation techniques, whereby the numerical model's underlying code is produced automatically from a high-level problem specification. This code can then in turn be targetted towards a range of different hardware architectures such as multi-core CPUs, GPUs and Intel Xeon Phi coprocessors. The layers of abstraction that are introduced means that the model equations and the discretisation procedures need only be written once at the high-level.</p>
-
-      <p>With funding from the <a href="http://www.archer.ac.uk/">UK National Supercomputing Service (ARCHER)</a>, I led the development of the <a href="https://github.com/firedrakeproject/firedrake-fluids">Firedrake-Fluids</a> project which uses <a href="http://www.firedrakeproject.org/">Firedrake</a> to automatically discretise and solve the shallow water equations with the finite element method. More recently, as part of the European Commission-funded <a href="http://exaflow-project.eu/">ExaFLOW project</a>, I have played a key role in the development of <a href="https://opensbli.github.io/">OpenSBLI</a> --- a framework for the derivation of finite difference-based models, which uses source-to-source translation to target the generated code towards different hardware backends with the help of the <a href="http://www.oerc.ox.ac.uk/projects/ops">OPS</a> library.</p>
-
-      <p>
-      <center>
-      <div class="image fit">
-         <img style="max-width:400px;" src="/images/taylor_green_vortex.png" alt="Simulation of the Taylor-Green vortex problem, performed using OpenSBLI."/>
-      </div>
-      <p><i>Simulation of the Taylor-Green vortex problem demonstrating vortex stretching and transition to turbulence, performed using OpenSBLI on an NVIDIA Tesla K40 Graphics Processing Unit. Isosurfaces of the z-component of vorticity are shown. Approximately 1,500 lines of C code (which solve the compressible Navier-Stokes equations using a fourth-order finite difference scheme) were generated from a high-level problem description comprising approximately 100 lines of Python code. Images by Jacobs <i>et al.</i> (2017).</i></p>
-      </center>
-      </p>
-      
-      <p>Further details can be found in the following papers:
-      <ul class="default">
-         <li>C. T. Jacobs, M. D. Piggott (2015). <b>Firedrake-Fluids v0.1: numerical modelling of shallow water flows using an automated solution framework</b>. <i>Geoscientific Model Development</i>, 8(3):533-547, DOI: <a href="http://dx.doi.org/10.5194/gmd-8-533-2015">10.5194/gmd-8-533-2015</a>.</li><br>
-         <li>C. T. Jacobs, M. D. Piggott, S. C. Kramer, S. W. Funke (2016). <b>On the validity of tidal turbine array configurations obtained from steady-state adjoint optimisation</b>. In <i>Proceedings of the VII European Congress on Computational Methods in Applied Sciences and Engineering, held in Crete, Greece on 5-10 June 2016</i>, volume 4, pages 8247-8261. <a href="https://arxiv.org/abs/1601.08091">Pre-print</a>.</li><br>
-         <li>C. T. Jacobs, S. P. Jammy, N. D. Sandham (2017). <b>OpenSBLI: A framework for the automated derivation and parallel execution of finite difference solvers on a range of computer architectures</b>. <i>Journal of Computational Science</i>, 18:12-23, DOI: <a href="http://dx.doi.org/10.1016/j.jocs.2016.11.001">10.1016/j.jocs.2016.11.001</a>.</li><br>
-         <li>S. P. Jammy, C. T. Jacobs, N. D. Sandham (In Press). <b>Performance evaluation of explicit finite difference algorithms with varying amounts of computational and memory intensity</b>. <i>Journal of Computational Science</i>, DOI: <a href="http://dx.doi.org/10.1016/j.jocs.2016.10.015">10.1016/j.jocs.2016.10.015</a>.</li>
       </ul>
       </p>
       
