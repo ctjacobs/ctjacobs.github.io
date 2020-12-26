@@ -1,0 +1,90 @@
+---
+layout: default
+title: PyQSO
+keywords: amateur radio, ham radio, log, logging, contact, logger, qso, pyqso, linux, open source, open-source, python, ubuntu, debian, grey line, dx cluster, database, ADIF, Cabrillo, Hamlib, qrz.com, hamqth.com
+---
+
+<article id="main">
+
+   <header class="special container">
+	   <span class="icon fa-wifi"></span>
+	   <h2><strong>PyQSO</strong></h2>
+	   <p><h3>A contact logging tool for amateur radio operators</h3></p>
+   </header>
+
+   <section class="wrapper style1 container">
+   
+      <!-- Overview -->
+      <div class="content">
+      
+      <p>
+      PyQSO is a logging tool for amateur radio operators. It provides a simple graphical interface through which users can manage information about the contacts/QSOs they make with other operators on the air. All information is stored in a light-weight SQL database. Other key features include:
+      <ul class="default">
+         <li>Customisable interface (e.g. only show callsign and frequency information).</li>
+         <li>Import logs in <a href="http://www.adif.org/">ADIF</a> format, and export logs in ADIF or <a href="http://wwrof.org/cabrillo/">Cabrillo</a> format.</li>
+         <li>Perform callsign lookups and auto-fill data fields using the <a href="http://www.qrz.com/">qrz.com</a> or <a href="http://www.hamqth.com/">hamqth.com</a> database.</li>
+         <li>Sort the logs by individual fields.</li>
+         <li>Print a hard-copy of logs, or print to PDF.</li>
+         <li>Connect to Telnet-based DX clusters.</li>
+         <li>Progress tracker for the <a href="http://www.arrl.org/dxcc/">DXCC award</a>.</li>
+         <li>World map with grey line and Maidenhead grid squares.</li>
+         <li>Filter out QSOs based on the callsign field (e.g. only display contacts with callsigns beginning with "M6").</li>
+         <li>Remove duplicate QSOs.</li>
+         <li>Basic support for the <a href="http://hamlib.sourceforge.net/">Hamlib</a> library.</li>
+      </ul>
+      </p>
+
+      <p>The software is released under the <a href="https://www.gnu.org/copyleft/gpl.html">GNU General Public License</a>.</p>
+      </div>
+
+      <!-- Download -->
+      <div class="content">
+      <header>
+         <h2>Download</h2>
+      </header>
+
+      <p>The latest release of PyQSO can be downloaded here: <a href="https://github.com/ctjacobs/pyqso/releases">https://github.com/ctjacobs/pyqso/releases</a>. Installation instructions are provided in the <a href="http://pyqso.readthedocs.io/">documentation</a>. The screencast below also demonstrates how to install, configure and use PyQSO:
+      <center>
+      <iframe frameborder="0" width="100%" style="max-width:640px; min-height:390px;" src="https://www.youtube.com/embed/sVdZl9KnDsk"> </iframe>
+      </center>
+      </p>
+
+      <p>
+      <b>Note 1:</b> It is recommended that users run PyQSO on the Linux operating system, since all development and testing of PyQSO takes place there. See the <a href="http://pyqso.readthedocs.io/en/latest/getting_started.html#system-requirements">system requirements</a> for further information.<br>
+      <b>Note 2:</b> The 'bleeding edge' version of the source code can be downloaded <a href="https://github.com/ctjacobs/pyqso/archive/master.zip">here</a>. It may contain several bug fixes and improvements that have not yet been released.<br>
+      <b>Note 3:</b> PyQSO can also be installed on Raspberry Pi hardware.
+      </p>
+
+      <p>Any feedback or bug reports <a href="mailto:christian@christianjacobs.uk">via email</a> or <a href="https://github.com/ctjacobs/pyqso/issues">via the issue tracker</a> are welcome.</p>
+
+      </div>
+      
+      <!-- Screenshots -->
+      <div class="content">
+      <header>
+         <h2>Screenshots</h2>
+      </header>
+      
+      <p>The PyQSO main window:
+      <center>
+      <img src="https://raw.github.com/ctjacobs/pyqso/master/docs/source/images/logbook.png" width="60%" alt="The PyQSO main window."/>
+      </center>
+      </p>
+
+      <p>The dialog for adding and editing QSO records:
+      <center>
+      <img src="https://raw.github.com/ctjacobs/pyqso/master/docs/source/images/edit_record.png" width="50%" alt="The 'edit record' dialog."/>
+      </center>
+      </p>
+
+      <p>The world map tool:
+      <center>
+      <img src="https://raw.github.com/ctjacobs/pyqso/master/docs/source/images/world_map.png" width="50%" alt="The grey line tool."/>
+      </center>
+      </p>
+
+      </div>
+      
+   </section>
+   
+</article>
