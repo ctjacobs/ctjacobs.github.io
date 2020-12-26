@@ -1,0 +1,61 @@
+---
+layout: default
+title: Computational Fluid Dynamics - Research
+keywords: computational science, computational fluid dynamics, numerical modelling, numerical methods, simulation, turbulence, turbulence simulation, heterogeneous modelling, large eddy simulation, quasi-direct numerical simulation, LES, QDNS
+---
+
+<article id="main">
+
+   <header class="special container">
+	   <span class="icon fa-cogs"></span>
+	   <h2><strong>Research</strong></h2>
+	   <p><h3>Computational Fluid Dynamics</h3></p>
+   </header>
+
+   <!-- Turbulence Simulation -->
+   <section class="wrapper style1 container">
+   
+      <!-- Content -->
+      <div class="content">
+      <header>
+         <h2>Turbulence Simulation</h2>
+      </header>
+      <p>Direct numerical simulations of turbulent flow phenomena are often limited by the large computational cost associated with them, with grid point counts scaling strongly with Reynolds number. Large eddy simulation (LES) is a cheaper and attractive alternative. However, the lack of an accurate reduced order model for wall treatment means that, in practice, the LES needs to resolve the small scales near walls. It therefore suffers from the same strong scaling issue.</p>
+      
+      <p>During a period of postdoctoral research at the University of Southampton I co-developed a new heterogeneous modelling-based approach to the simulation of turbulence in a three-dimensional channel. A single coarse-grid LES is used to simulate the main flow while an array of small non-space-filling subdomains samples the near-wall turbulence using quasi-direct numerical simulation (QDNS). This is illustrated in the figure below. All QDNS subdomains are run in parallel as separate simulations. The shear stresses from the QDNSs are then fed back to the LES to provide an equivalent of a wall function. The new approach helps to alleviate some of the cost issues attributed with wall-resolved LES and full DNS whilst maintaining solution accuracy.</p>
+
+      <p>
+      <center>
+      <div class="image fit">
+         <img style="max-width:400px;" src="/images/channel.png" alt="The channel flow setup using the new combined LES-QDNS approach."/>
+      </div>
+      <p><i>The channel flow setup using the new combined LES-QDNS approach. A single coarse grid LES is used for the whole channel, and an array of non-space-filling QDNS blocks are mounted along the channel walls. Image by <a href="http://dx.doi.org/10.1002/fld.4395">Sandham <i>et al.</i> (2017)</a>.</i></p>
+      </center>
+      </p>
+
+      <p>Two cases at friction Reynolds numbers Re<sub>&tau;</sub> = 4200 and 20000 were considered when evaluating the effectiveness of the approach. The mean velocity profile from the Re<sub>&tau;</sub> = 4200 case below agrees very well with DNS data from <a href="http://dx.doi.org/10.1063/1.4862918">Lozano-Durán and Jiménez (2014)</a> whilst using only 0.02% of the number of DNS grid points, highlighting a key advantage of the approach. Results from the higher Reynolds number case also agree with the log law of the wall. Furthermore, a low level of sensitivity with respect to grid resolution is observed.</p>
+      
+      <p>
+      <center>
+      <iframe frameborder="0" width="100%" style="max-width:640px; min-height:390px;" src="https://www.youtube.com/embed/x0kk04LKOb8"> </iframe>
+      </center>
+      </p>
+
+      <p>
+      <center>
+      <div class="image fit">
+         <img style="max-width:600px;" src="/images/mean-uplus-combined-refined-les.png" alt="The channel flow setup using the new combined LES-QDNS approach."/>
+      </div>
+      <p><i>The mean streamwise velocity profile, shown with (a) linear and (b) semi-logarithmic axes, compared to DNS results by <a href="http://dx.doi.org/10.1063/1.4862918">Lozano-Durán and Jiménez (2014)</a>. Image by <a href="http://dx.doi.org/10.1002/fld.4395">Sandham <i>et al.</i> (2017)</a>.</i></p>
+      </center>
+      </p>
+      
+      <p>Further details can be found in the following paper:
+      <ul class="default">
+         <li>N. D. Sandham, R. Johnstone, C. T. Jacobs (2017). <b>Surface-sampled simulations of turbulent flow at high Reynolds number</b>. <i>International Journal for Numerical Methods in Fluids</i>, 85(9):525-537, DOI: <a href="http://dx.doi.org/10.1002/fld.4395">10.1002/fld.4395</a>.</li>
+      </ul>
+      </p>
+      
+      </div>
+   </section>
+</article>
