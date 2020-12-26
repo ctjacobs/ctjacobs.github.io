@@ -1,8 +1,7 @@
 # Site settings
-author: Christian T. Jacobs
-title: Christian T. Jacobs
-email: christian@christianjacobs.uk
-description: Personal website of Christian T. Jacobs.
+author: Christian Jacobs
+title: Christian Jacobs
+description: Personal website of Christian Jacobs.
 keywords: christian jacobs, research, computational science, computational fluid dynamics, research data management, software, teaching, amateur radio, ham radio
 baseurl: "/" # The subpath of your site, e.g. /blog/
 url: "https://christianjacobs.uk" # The base hostname & protocol for your site. Use "http://localhost:4000" for local builds.
